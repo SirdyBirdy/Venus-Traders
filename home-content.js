@@ -28,7 +28,12 @@ const homeContent = {
       { value: "40K+", label: "products across our stores" },
       { value: "6", label: "stores across Pune" },
       { value: "3", label: "generations, one family" }
-    ]
+    ],
+    photo: {
+      src: "https://picsum.photos/seed/venus-hero/1200/500",
+      alt: "Placeholder photo of a stationery store interior",
+      caption: "[Dummy stock photo — replace with a real photo of a Venus Traders storefront or shelf.]"
+    }
   },
 
   heritage: {
@@ -56,7 +61,12 @@ const homeContent = {
         head: "Six Stores, One Family",
         text: "Six Venus Traders stores across Pune — at Appa Balwant Chowk, FC Road, Kothrud, Wanowrie, Magarpatta, and Baner — still run by the same family, five decades on."
       }
-    ]
+    ],
+    photo: {
+      src: "https://picsum.photos/seed/venus-heritage/1200/500",
+      alt: "Placeholder photo evoking the store's history",
+      caption: "[Dummy stock photo — replace with an archival photo, old shop signage, or a family photo from over the years.]"
+    }
   },
 
   categories: {
@@ -95,13 +105,14 @@ const homeContent = {
   stores: {
     visualHeading: `Six stores, <em>one city.</em>`,
     visualSub: "Walk into any Venus Traders across Pune — same stock philosophy, same family, five decades running.",
+    photoNote: "[Dummy stock photos throughout this section — replace each with a real photo of that store's frontage or interior.]",
     list: [
-      { name: "FC Road — Deccan Gymkhana", meta: "Venus Point Lane, Fergusson College Rd, opp. OBC Tower, Deccan Gymkhana, Pune 411004 · 020 4100 6423", days: "All days", hours: "10:00 AM – 9:30 PM" },
-      { name: "Appa Balwant Chowk", meta: "Appa Balwant Chowk, Pune · 020 4100 6432", days: "All days", hours: "[Hours — owners to confirm]" },
-      { name: "Kothrud", meta: "Silver Fern Building, Karve Road, opp. Kothrud Bus Stand, Pune 411038 · 020 2545 5868", days: "All days", hours: "10:00 AM – 9:00 PM" },
-      { name: "Wanowrie", meta: "Wanowrie, Pune · 020 4125 7000", days: "All days", hours: "[Hours — owners to confirm]" },
-      { name: "Magarpatta", meta: "Magarpatta, Pune · 020 6723 6724", days: "All days", hours: "[Hours — owners to confirm]" },
-      { name: "Baner", meta: "Baner, Pune · 077440 04433", days: "All days", hours: "[Hours — owners to confirm]" }
+      { name: "FC Road — Deccan Gymkhana", meta: "Venus Point Lane, Fergusson College Rd, opp. OBC Tower, Deccan Gymkhana, Pune 411004 · 020 4100 6423", days: "All days", hours: "10:00 AM – 9:30 PM", photo: "https://picsum.photos/seed/venus-store-fcroad/600/400" },
+      { name: "Appa Balwant Chowk", meta: "Appa Balwant Chowk, Pune · 020 4100 6432", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-abc/600/400" },
+      { name: "Kothrud", meta: "Silver Fern Building, Karve Road, opp. Kothrud Bus Stand, Pune 411038 · 020 2545 5868", days: "All days", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-kothrud/600/400" },
+      { name: "Wanowrie", meta: "Wanowrie, Pune · 020 4125 7000", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-wanowrie/600/400" },
+      { name: "Magarpatta", meta: "Magarpatta, Pune · 020 6723 6724", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-magarpatta/600/400" },
+      { name: "Baner", meta: "Baner, Pune · 077440 04433", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-baner/600/400" }
     ]
   },
 
@@ -157,6 +168,9 @@ function renderHome(content) {
   document.getElementById("hero-stamps").innerHTML = content.hero.stamps.map(s => `
     <div class="stamp"><strong>${s.value}</strong> ${s.label}</div>
   `).join("");
+  document.getElementById("hero-photo").src = content.hero.photo.src;
+  document.getElementById("hero-photo").alt = content.hero.photo.alt;
+  document.getElementById("hero-photo-caption").textContent = content.hero.photo.caption;
 
   // Heritage
   document.getElementById("heritage-label").textContent = content.heritage.label;
@@ -169,6 +183,9 @@ function renderHome(content) {
       <p class="tl-text">${t.text}</p>
     </div>
   `).join("");
+  document.getElementById("heritage-photo").src = content.heritage.photo.src;
+  document.getElementById("heritage-photo").alt = content.heritage.photo.alt;
+  document.getElementById("heritage-photo-caption").textContent = content.heritage.photo.caption;
 
   // Categories
   document.getElementById("categories-label").textContent = content.categories.label;
@@ -211,11 +228,13 @@ function renderHome(content) {
   document.getElementById("stores-visual-sub").textContent = content.stores.visualSub;
   document.getElementById("store-list").innerHTML = content.stores.list.map(s => `
     <div class="store-item">
+      <img class="store-photo" src="${s.photo}" alt="Placeholder photo of ${s.name} store" />
       <h5>${s.name}</h5>
       <div class="meta">${s.meta}</div>
       <div class="hrs"><span>${s.days}</span><strong>${s.hours}</strong></div>
     </div>
   `).join("");
+  document.getElementById("stores-photo-note").textContent = content.stores.photoNote;
 
   // Testimonials
   document.getElementById("testi-label").textContent = content.testimonials.label;

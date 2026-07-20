@@ -19,7 +19,12 @@ const corporateContent = {
       { value: "[?]", label: "years supplying Pune offices" },
       { value: "[?]", label: "companies currently supplied" },
       { value: "[?]", label: "stores able to fulfil bulk orders" }
-    ]
+    ],
+    photo: {
+      src: "https://picsum.photos/seed/venus-corporate/1200/500",
+      alt: "Placeholder photo of bulk office stationery supplies",
+      caption: "[Dummy stock photo — replace with a real photo of a bulk order, delivery, or an office set up with Venus Traders supplies.]"
+    }
   },
 
   features: {
@@ -111,6 +116,9 @@ function renderCorporate(content) {
   document.getElementById("corp-stats").innerHTML = content.hero.stats.map(s => `
     <div class="stamp"><strong>${s.value}</strong> ${s.label}</div>
   `).join("");
+  document.getElementById("corp-photo").src = content.hero.photo.src;
+  document.getElementById("corp-photo").alt = content.hero.photo.alt;
+  document.getElementById("corp-photo-caption").textContent = content.hero.photo.caption;
 
   // Features
   document.getElementById("features-label").textContent = content.features.label;

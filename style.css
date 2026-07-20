@@ -195,6 +195,16 @@
 .corp-hero .corp-stats .stamp{color:rgba(244,237,224,.7)}
 .corp-hero .corp-stats strong{color:var(--paper)}
 
+/* ===== PHOTO SLOTS (dummy placeholders — swap with real store photos) ===== */
+.photo-band{border-radius:24px;overflow:hidden;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);margin:40px 0 10px}
+.photo-band img{display:block;width:100%;height:340px;object-fit:cover}
+.photo-caption{font-size:12px;color:var(--ink-soft);margin-top:10px;font-style:italic}
+.heritage .photo-caption{color:rgba(244,237,224,.55)}
+.corp-hero .photo-band{border-color:rgba(244,237,224,.3);box-shadow:6px 6px 0 var(--mustard)}
+.corp-hero .photo-caption{color:rgba(244,237,224,.5)}
+
+.store-photo{width:100%;height:150px;object-fit:cover;border-radius:12px;border:1.5px solid var(--ink);margin-bottom:14px}
+
 .corp-stats{display:flex;gap:44px;flex-wrap:wrap;margin-top:36px;padding-top:30px;border-top:1px dashed rgba(244,237,224,.2)}
 
 .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:10px}
