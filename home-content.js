@@ -14,20 +14,20 @@ const homeContent = {
 
   hero: {
     tag: "Family-run in Pune since 1974",
-    heading: `Where Pune <em>writes,</em><br/>draws & <span class="squiggle">creates</span> — for three generations.`,
-    lede: "From a single Pune stationery counter to six stores across the city — Venus Traders has spent over five decades helping students, artists, and offices find exactly what they need.",
+    heading: `Where Pune <em>writes,</em><br/>draws & <span class="squiggle">creates.</span>`,
+    lede: "Venus Traders has been putting the right pen, notebook or art supply in someone's hands since 1974. What started as a small counter in Pune is now six stores across the city, still run by the family that opened the first one.",
     primaryCta: { label: "Browse what we stock →", href: "#categories" },
     secondaryCta: { label: "Read our story", href: "#heritage" },
     quote: {
       label: "— A note from the family",
-      text: "[Space held for a short, personal quote from the family — how the shop started, or what keeps it going three generations on.]",
-      signature: "[Owner name], [Generation]rd Generation"
+      text: "Every stationery item, available under one roof.",
+      signature: "Pramod Karamchandani, Partner"
     },
     stamps: [
       { value: "50+", label: "years of trust" },
       { value: "40K+", label: "products across our stores" },
       { value: "6", label: "stores across Pune" },
-      { value: "3", label: "generations, one family" }
+      { value: "900+", label: "clients who order regularly" }
     ],
     photo: {
       src: "https://picsum.photos/seed/venus-hero/1200/500",
@@ -39,27 +39,27 @@ const homeContent = {
   heritage: {
     label: "Our story",
     title: `A counter, a city, and a quiet <em>promise</em> kept since 1974.`,
-    lede: "Three generations. One philosophy: stock what people actually need, and remember every customer's name.",
+    lede: "One philosophy since day one: stock what people actually need, and remember their names.",
     timeline: [
       {
         year: "1974",
-        head: "The First Shop",
-        text: "[Placeholder — needs family input: where was the very first Venus Traders shop, and what did it first stock?]"
+        head: "The First Counter",
+        text: "The Karamchandani family opened a small 250 sq. ft. stationery counter in Pune — everything a student or office needed, close at hand."
       },
       {
-        year: "[Year]",
-        head: "[Milestone title]",
-        text: "[Placeholder — a second-generation milestone: an expansion, a new category, a hard year overcome. Owners to supply.]"
+        year: "1982",
+        head: "New Products, New Trust",
+        text: "Venus Traders took on the dealership for Alkon and Texhnova film, adding photography supplies to the shelves and building relationships that lasted for years."
       },
       {
-        year: "[Year]",
-        head: "[Milestone title]",
-        text: "[Placeholder — when did the store network grow beyond one location? Which was the second store, and why there?]"
+        year: "[Year — owners to confirm]",
+        head: "Room to Grow",
+        text: "The shop next door came free, and Venus Traders expanded into it — making space for a stationery range that kept growing."
       },
       {
         year: "Today",
         head: "Six Stores, One Family",
-        text: "Six Venus Traders stores across Pune — at Appa Balwant Chowk, FC Road, Kothrud, Wanowrie, Magarpatta, and Baner — still run by the same family, five decades on."
+        text: "Venus Traders now runs six stores across Pune, from FC Road to Baner, still watched over by the same family, still run as a partnership: Surendra, Pramod, Vinod and Nikhil Karamchandani."
       }
     ],
     photo: {
@@ -72,54 +72,56 @@ const homeContent = {
   categories: {
     label: "What we stock",
     title: `Every shelf, lovingly <em>curated.</em>`,
-    intro: "Seven departments. Forty thousand-plus products. One pleasantly overwhelming superstore.",
+    intro: "Nine departments and more than forty thousand products, from exam-time basics to things you didn't know you needed.",
     list: [
-      { icon: "✎", tint: "t1", name: "School & Office Stationery", count: "[Item count — owners to confirm]" },
-      { icon: "✱", tint: "t3", name: "Fine Arts", count: "[Item count — owners to confirm]" },
-      { icon: "✦", tint: "t2", name: "Hobbies & Crafts", count: "[Item count — owners to confirm]" },
-      { icon: "▢", tint: "t5", name: "Storage Materials", count: "[Item count — owners to confirm]" },
-      { icon: "◐", tint: "t6", name: "Computer & Desk Accessories", count: "[Item count — owners to confirm]" },
-      { icon: "✉", tint: "t4", name: "Visual Displays", count: "[Item count — owners to confirm]" },
-      { icon: "✦", tint: "t3", name: "Festive Decorations & Gifting", count: "[Item count — owners to confirm]" }
+      { icon: "✉", tint: "t2", name: "Office Stationery", count: "[Item count — owners to confirm]" },
+      { icon: "✎", tint: "t1", name: "School Stationery", count: "[Item count — owners to confirm]" },
+      { icon: "✒", tint: "t3", name: "Premium Pens & Inks", count: "[Item count — owners to confirm]" },
+      { icon: "✱", tint: "t4", name: "Art & Hobby Materials", count: "[Item count — owners to confirm]" },
+      { icon: "✦", tint: "t5", name: "Corporate Gifting", count: "[Item count — owners to confirm]" },
+      { icon: "▤", tint: "t6", name: "Educational Supplies", count: "[Item count — owners to confirm]" },
+      { icon: "▢", tint: "t1", name: "Display Boards & Signage", count: "[Item count — owners to confirm]" },
+      { icon: "▦", tint: "t2", name: "Storage & Filing Solutions", count: "[Item count — owners to confirm]" },
+      { icon: "◐", tint: "t3", name: "Printing & Office Essentials", count: "[Item count — owners to confirm]" }
     ]
   },
 
   brands: {
     label: "Beyond the shelf",
     title: "More than a stationery counter.",
-    lede: "[Placeholder — do we run any specialised services or sister brands (printing, custom gifting, an institutional/wholesale arm) worth their own space here? If yes, owners to confirm names and details below. If not, this section can be dropped.]",
+    lede: "Alongside our regular shelves, we run a few specialised divisions — and we're authorised distributors for several leading stationery brands.",
     items: [
-      { tag: "[Confirm]", name: "[Service or brand name]", text: "[Placeholder — e.g. printing, framing, or custom gifting services, if offered.]" },
-      { tag: "[Confirm]", name: "[Service or brand name]", text: "[Placeholder — e.g. art classes, workshops, or a loyalty programme, if offered.]" },
-      { tag: "[Confirm]", name: "[Service or brand name]", text: "[Placeholder — e.g. bulk/institutional supply for schools, if run as a distinct offering.]" }
+      { tag: "Premium Pens", name: "Fine Writing Instruments", text: "A dedicated range of pens and inks for people who care about how they write, and what they write with." },
+      { tag: "Corporate Gifting", name: "Venus Corporate Gifting", text: "Gifting and hamper solutions for festivals, onboarding, and the client relationships that matter." },
+      { tag: "Educational Supplies", name: "Venus for Institutions", text: "Dedicated supply and support for schools, colleges and training institutes across Pune." }
     ]
   },
 
   corpTeaser: {
     label: "For corporates",
     title: `A procurement partner that <em>shows up.</em>`,
-    text: "We also supply offices and institutions across Pune — bulk orders, recurring supply, and billing that keeps your accounts team happy.",
+    text: "We supply corporate offices, educational institutions and hospitals across Pune, and provide premium pens to doctors, advocates, architects and builders. Around 900 clients order from us regularly, and every order comes with proper GST billing.",
     cta: { label: "Explore corporate supply →", href: "corporate.html" }
   },
 
   stores: {
     visualHeading: `Six stores, <em>one city.</em>`,
-    visualSub: "Walk into any Venus Traders across Pune — same stock philosophy, same family, five decades running.",
+    visualSub: "Walk into any Venus Traders across Pune and you'll find the same stock, the same family, and five decades of knowing what people actually need.",
     photoNote: "[Dummy stock photos throughout this section — replace each with a real photo of that store's frontage or interior.]",
     list: [
-      { name: "FC Road — Deccan Gymkhana", meta: "Venus Point Lane, Fergusson College Rd, opp. OBC Tower, Deccan Gymkhana, Pune 411004 · 020 4100 6423", days: "All days", hours: "10:00 AM – 9:30 PM", photo: "https://picsum.photos/seed/venus-store-fcroad/600/400" },
-      { name: "Appa Balwant Chowk", meta: "Appa Balwant Chowk, Pune · 020 4100 6432", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-abc/600/400" },
-      { name: "Kothrud", meta: "Silver Fern Building, Karve Road, opp. Kothrud Bus Stand, Pune 411038 · 020 2545 5868", days: "All days", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-kothrud/600/400" },
-      { name: "Wanowrie", meta: "Wanowrie, Pune · 020 4125 7000", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-wanowrie/600/400" },
-      { name: "Magarpatta", meta: "Magarpatta, Pune · 020 6723 6724", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-magarpatta/600/400" },
-      { name: "Baner", meta: "Baner, Pune · 077440 04433", days: "All days", hours: "[Hours — owners to confirm]", photo: "https://picsum.photos/seed/venus-store-baner/600/400" }
+      { name: "FC Road — Deccan Gymkhana", meta: "Venus Point Lane, Fergusson College Rd, opp. OBC Tower, Deccan Gymkhana, Pune 411004 · 8308403401 · fc@venustraders.com", note: "Our flagship — the widest range across every category. Parking is limited.", days: "Mon–Sun", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-fcroad/600/400" },
+      { name: "Appa Balwant Chowk", meta: "31, Budhwar Peth, near Appa Balwant Chowk, Pune 411002 · 9225660274 · accounts@venustraders.com", days: "Mon–Sun", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-abc/600/400" },
+      { name: "Kothrud", meta: "Silver Fern Building, opp. Kothrud Bus Stand, Dahanukar Colony, Karve Road, Kothrud, Pune 411038 · 9075617495 · kothrud@venustraders.com", days: "Mon–Sun", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-kothrud/600/400" },
+      { name: "Wanowrie", meta: "Wing C-3, Vitthal Rao Shivarkar Road, Natraj Enclave, Fatima Nagar, Wanowrie, Pune 411040 · 8484996371 · fatimanagar@venustraders.com", days: "Mon–Sun", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-wanowrie/600/400" },
+      { name: "Magarpatta", meta: "Shop F1, First Floor, Season's Mall, Magarpatta, Hadapsar, Pune 411028 · 8484996381 · hadapsar@venustraders.com", days: "Mon–Sun", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-magarpatta/600/400" },
+      { name: "Baner", meta: "Near Signet Corner, Balewadi Phata, Baner, Pune 411045 · 7030648164 · baner@venustraders.com", days: "Mon–Sun", hours: "10:00 AM – 9:00 PM", photo: "https://picsum.photos/seed/venus-store-baner/600/400" }
     ]
   },
 
   testimonials: {
     label: "Kind words",
     title: `Trusted by Pune's <em>schools, studios</em> & boardrooms.`,
-    note: "Note: real customer testimonials and photo/name permission need to be collected before launch — see content requirements doc.",
+    note: "Note: we still need real customer testimonials, plus permission to publish each person's name and photo, before launch. See the content requirements doc for details.",
     list: [
       { quote: "[Placeholder — needs a real testimonial and written permission to publish, from a long-time customer, e.g. a parent or student.]", name: "[Customer name]", role: "[Role · area]" },
       { quote: "[Placeholder — a testimonial from a corporate/office client, if one is willing to be quoted and named.]", name: "[Customer name]", role: "[Role · company]" },
@@ -129,13 +131,13 @@ const homeContent = {
 
   cta: {
     heading: `Come say <em>hello.</em>`,
-    text: "Three generations of stationers, ready to help you find exactly what you need — or something you didn't know you wanted.",
+    text: "Come find exactly what you need, or something you didn't know you wanted. We've been doing this since 1974.",
     button: { label: "Find your nearest store →", href: "#stores" }
   },
 
   footer: {
-    blurb: "Pune's stationery superstore since 1974. Family-run, three generations strong, six stores across the city.",
-    shopLinks: ["School & Office Stationery", "Fine Arts", "Hobbies & Crafts", "Festive Decorations & Gifting"],
+    blurb: "Pune's stationery superstore since 1974. Still family-run, now with six stores across the city.",
+    shopLinks: ["School & Office Stationery", "Premium Pens & Inks", "Art & Hobby Materials", "Corporate Gifting"],
     companyLinks: [
       { label: "Our Story", href: "#heritage" },
       { label: "Beyond the Shelf", href: "#brands" },
@@ -143,7 +145,7 @@ const homeContent = {
       { label: "Careers", href: "#" }
     ],
     visitLinks: ["FC Road", "Kothrud", "Appa Balwant Chowk", "Baner"],
-    copyright: "© 1974–2026 Venus Traders · Pune. [Confirm legal entity name, e.g. sole proprietorship/partnership/Pvt. Ltd.]",
+    copyright: "© 1974–2026 Venus Traders, a partnership firm · Pune.",
     tagline: "Made with ink, paper & five decades of practice."
   }
 };
@@ -231,6 +233,7 @@ function renderHome(content) {
       <img class="store-photo" src="${s.photo}" alt="Placeholder photo of ${s.name} store" />
       <h5>${s.name}</h5>
       <div class="meta">${s.meta}</div>
+      ${s.note ? `<div class="meta" style="margin-top:4px;font-style:italic">${s.note}</div>` : ""}
       <div class="hrs"><span>${s.days}</span><strong>${s.hours}</strong></div>
     </div>
   `).join("");
